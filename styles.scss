@@ -1,0 +1,403 @@
+$blue: #8DABA2;
+$darkblue: #25323A;
+$background: #FAFBFB;
+$black: #293236;
+$font: 'Muli', sans-serif;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $black;
+    background: $background;
+    font-family: $font;
+}
+
+.container{
+    width: 100%;
+}
+
+.tab{
+    text-indent: 1rem;
+}
+
+h1,h2{
+    font-weight: 800;
+}
+
+h3,
+h4,
+h5,
+h6{
+    font-weight: 600
+}
+
+p{
+    font-weight: 300;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh; 
+    display: grid;
+    place-items: center;
+    background: $background;
+    -webkit-box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.2);
+
+    ul{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: $darkblue;
+                font-size: 1rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+#hero{
+    height:  100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: $darkblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: $background;
+    }
+
+    h3{
+        margin: 0;
+        font-size: 1rem;
+        color: $blue;
+    }
+}
+
+.img-container{
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+#why{
+    .main-img{
+        height: 50vh;
+        width: 100%;
+        background: url('http://www.wpdailythemes.com/wp-content/uploads/2016/01/Error.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        place-items: center;
+        
+        h2{
+            font-size: 2rem;
+            color: $background;
+            padding: 40px;
+            background: $darkblue;
+        }
+    }
+
+    .img-container{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .content{
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem 0;
+
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul{
+            li{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.quote{
+    padding: 10vh 0;
+    width: 80%;
+    margin:  0 auto;
+    span{
+
+        h1{
+            width: 100%;
+            color: $darkblue;
+        }
+
+        h4{
+            font-size: 2rem;
+            margin: 0;
+            color: $blue;
+        }
+    }
+}
+
+#solution{
+    padding: 10vh 0;
+
+    .split-hero{
+        height: 60vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+
+        .left-img{
+            background: url('http://www.hixle.co/wp-content/uploads/Gatsby-JS-min.jpg');
+        }
+
+        .right-img{
+            background: url('https://www.sanity.io/docs/static/images/opengraph/social.png');
+        }
+
+        .left-img,
+        .right-img{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .container{
+        width: 90%; 
+        margin: 0 auto;
+
+        .gatsby-info{
+            h2{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+#faq{
+    padding: 10vh 0;
+    
+    .faq-header{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .question-container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 5vh 0;
+
+        .question{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        .answer{
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+#resources{
+    padding:  10vh 0 20vh 0;
+
+    h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .gatsby-examples{
+        margin: 0 auto;
+        width: 60%;
+
+        li{
+            width: 100%;
+
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 767px){
+    nav{
+        ul{
+            width: 60%;
+
+            li{
+                a{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #hero{
+        h1{
+            font-size: 5rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+    }
+
+
+    #why{
+        .main-img{
+            height: 80vh;
+            
+            h2{
+                font-size: 3rem;
+            }
+        }
+
+        .container{
+            padding: 10vh 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+            overflow: hidden;
+            place-items: center;
+
+            h2{
+                font-size: 2.5rem;
+                color: $darkblue;
+            }
+
+            ul{
+                li{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .quote{
+        width: 60%;
+
+        span{
+            h1{
+                font-size: 4rem;
+            }
+            
+            h4{
+                font-size: 3rem;
+            }
+        }
+    }
+
+
+    #solution{
+        .split-hero{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+        .container{
+            width: 60%;
+
+            .gatsby-info{
+                padding-top: 5vh;
+
+                h2{
+                    font-size: 4rem;
+                     margin-bottom: 0;
+                }
+
+                p{
+                    width: 100%;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    #faq{
+        .faq-header{
+            font-size: 3rem;
+        }
+
+        .question-container{
+            .question{
+                width: 80%;
+            }
+            
+            .answer{
+                font-size: 1.5rem;
+                width: 70%;
+            }
+        }
+    }
+}
+
+.gatsby-examples{
+    padding: 0;
+
+    li{
+        list-style: none;
+        width: 20%;
+        
+        a{
+            text-decoration: none;
+            color: $darkblue;
+            font-size: 1.5rem;
+            font-weight: 600; 
+            transition: all .1s ease;
+        }
+
+        &:hover{
+            a{
+                color: $blue;
+            }
+        }
+    }
+}

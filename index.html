@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gatsby Proposal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,600,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="scroll" href="#hero">home</a></li>
+            <li><a class="scroll" href="#why">why</a></li>
+            <li><a class="scroll" href="#solution">solution</a></li>
+            <li><a class="scroll" href="#faq">questions</a></li>
+            <li><a class="scroll" href="#resources">resources</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <h1 class="uppercase">Gatsby X Sanity</h1>
+    </section>
+
+    <section id="why">
+        <div class="main-img">
+            <h2 class="uppercase">Why A New System?</h2>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img src="img/Screen Shot 2019-06-26 at 11.32.15 AM.png" alt="sad wordpress">
+            </div>
+
+            <div class="content">
+                <h2 class="uppercase">Wordpress Issues</h2>
+                <ul>
+                    <li>Poor site performance</li>
+                    <li>Layout is dictated by theme</li>
+                    <li>Prone to hackers</li>
+                    <li>Constant updates</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="quote">
+        <span><h1> 53% of mobile users abandon sites that take over 3 seconds to&nbsp;load</h1><h4>&ndash;Google</h4></span>
+    </div> 
+
+    <section id="solution">
+        <div class="split-hero">
+            <div class="left-img"></div>
+            <div class="right-img"></div>
+        </div>
+
+        <div class="container">
+            <div class="gatsby-info">
+                <h2>Gatsby & Sanity</h2>
+                <p>There are a lot of benefits that come from building websites in modern techstacks. By using Gatsby we allow our designers to have access to native page transitions, while still having an extremely performant website. Sanity is a headless CMS that comes with a built-in dashboard that makes it easy to edit content in the user's&nbsp;site.</p>
+
+                <ul class="gatsby-examples">
+                    <li><a target="_blank" href="https://www.designsystems.com/">designsystems.com</a></li>
+                    <li><a target="_blank" href="https://airbnb.io/">airbnb.io</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="faq">
+        <h2 class="uppercase faq-header">Questions You Might Have</h2>
+
+        <div class="question-container">
+            <h3 class="question">Is it secure?</h3>
+            <p class="answer">Gatsby compiles all the code and turns it into static HMTL, CSS and JS files. If someone tries to hack your site, all they will see is those files. Your data is&nbsp;safe.</p>
+            <p class="answer tab">As for where all of the data is stored, Sanity encrypts your data at rest and in transit. Basically your data is always encrypted whether it is sitting in Sanity or whether it is being called into&nbsp;Gatsby.</p>
+        </div>
+
+        <div class="question-container">
+            <h3 class="question">Could we integrate a store or the videos?</h3>
+            <p class="answer">You can build custom e-commerce sites using React, since it is extremely easy to add the stripe api and work with taking secure payments in Gatsby. Also since everything is built in Javascript it is simpler to work with the JW Player API.</p>
+
+            <ul class="gatsby-examples">
+                <li><a target="_blank" href="https://www.shopflamingo.com/">shopflamingo.com</a></li>
+                <li><a target="_blank" href="https://ca.braun.com/en-ca">ca.braun.com</a></li>
+                <li><a target="_blank" href="https://propapanda.eu/#/">propapanda.eu</a></li>
+            </ul>
+        </div>
+
+        <div class="question-container">
+            <h3 class="question">Are certain posts able to have different layouts than the others?</h3>
+            <p class="answer">Gatsby uses a query language called GraphQL, which allows the developer to choose exactly what data they want and only that. Using GraphQL, the developer can specify what they want for a specific layout, so there can be multiple different ways to create unique layouts while still keeping the ability to dynamically create posts and pages.</p>
+
+            <ul class="gatsby-examples">
+                <li><a target="_blank" href="https://graphql.org/">graphql.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resources">
+        <div class="container">
+            <h2 class="uppercase">Useful resources</h2>
+            <ul class="gatsby-examples">
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=B-9sZWwsTkI">Selling Gatsby to clients</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=SLGkyodumKI&t=4591s">Building a portfolio with Sanity and Gatsby</a></li>
+                <li><a target="_blank" href="https://www.gatsbyjs.org/">Gatsbyjs.org</a></li>
+                <li><a target="_blank" href="https://www.sanity.io/">Sanity.io</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/scroll.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

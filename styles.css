@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #293236;
+  background: #FAFBFB;
+  font-family: "Muli", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.tab {
+  text-indent: 1rem;
+}
+
+h1, h2 {
+  font-weight: 800;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #FAFBFB;
+  -webkit-box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #25323A;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #25323A;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #FAFBFB;
+}
+
+#hero h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #8DABA2;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#why .main-img {
+  height: 50vh;
+  width: 100%;
+  background: url("http://www.wpdailythemes.com/wp-content/uploads/2016/01/Error.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#why .main-img h2 {
+  font-size: 2rem;
+  color: #FAFBFB;
+  padding: 40px;
+  background: #25323A;
+}
+
+#why .img-container {
+  height: 50vh;
+  width: 100%;
+}
+
+#why .content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+#why .content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#why .content ul li {
+  font-size: 1.5rem;
+}
+
+.quote {
+  padding: 10vh 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.quote span h1 {
+  width: 100%;
+  color: #25323A;
+}
+
+.quote span h4 {
+  font-size: 2rem;
+  margin: 0;
+  color: #8DABA2;
+}
+
+#solution {
+  padding: 10vh 0;
+}
+
+#solution .split-hero {
+  height: 60vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+#solution .split-hero .left-img {
+  background: url("http://www.hixle.co/wp-content/uploads/Gatsby-JS-min.jpg");
+}
+
+#solution .split-hero .right-img {
+  background: url("https://www.sanity.io/docs/static/images/opengraph/social.png");
+}
+
+#solution .split-hero .left-img,
+#solution .split-hero .right-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#solution .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#solution .container .gatsby-info h2 {
+  font-size: 3rem;
+}
+
+#solution .container .gatsby-info p {
+  font-size: 1.5rem;
+}
+
+#faq {
+  padding: 10vh 0;
+}
+
+#faq .faq-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#faq .question-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5vh 0;
+}
+
+#faq .question-container .question {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#faq .question-container .answer {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#resources {
+  padding: 10vh 0 20vh 0;
+}
+
+#resources h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#resources .gatsby-examples {
+  margin: 0 auto;
+  width: 60%;
+}
+
+#resources .gatsby-examples li {
+  width: 100%;
+}
+
+#resources .gatsby-examples li a {
+  font-size: 2rem;
+}
+
+@media (min-width: 767px) {
+  nav ul {
+    width: 60%;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #hero h1 {
+    font-size: 5rem;
+  }
+  #hero h3 {
+    font-size: 2rem;
+  }
+  #why .main-img {
+    height: 80vh;
+  }
+  #why .main-img h2 {
+    font-size: 3rem;
+  }
+  #why .container {
+    padding: 10vh 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    overflow: hidden;
+    place-items: center;
+  }
+  #why .container h2 {
+    font-size: 2.5rem;
+    color: #25323A;
+  }
+  #why .container ul li {
+    font-size: 1.5rem;
+  }
+  .quote {
+    width: 60%;
+  }
+  .quote span h1 {
+    font-size: 4rem;
+  }
+  .quote span h4 {
+    font-size: 3rem;
+  }
+  #solution .split-hero {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  #solution .container {
+    width: 60%;
+  }
+  #solution .container .gatsby-info {
+    padding-top: 5vh;
+  }
+  #solution .container .gatsby-info h2 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  #solution .container .gatsby-info p {
+    width: 100%;
+    font-size: 2rem;
+  }
+  #faq .faq-header {
+    font-size: 3rem;
+  }
+  #faq .question-container .question {
+    width: 80%;
+  }
+  #faq .question-container .answer {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+}
+
+.gatsby-examples {
+  padding: 0;
+}
+
+.gatsby-examples li {
+  list-style: none;
+  width: 20%;
+}
+
+.gatsby-examples li a {
+  text-decoration: none;
+  color: #25323A;
+  font-size: 1.5rem;
+  font-weight: 600;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.gatsby-examples li:hover a {
+  color: #8DABA2;
+}
+/*# sourceMappingURL=styles.css.map */
